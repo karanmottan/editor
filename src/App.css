@@ -1,38 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .App {
   text-align: center;
+  font-family: Montserrat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header{
+  top: 0;
   color: white;
+  font-size: 3rem;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.input_container{
+  margin-top: 6%;
+  margin-left: 4%;
+  width: 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_box{
+  resize: none;
+  border-radius: 2px;
+}
+
+.output_container{
+  margin-top: 6%;
+  margin-right: 4%;
+  width: 40%;
+  margin-left: 8%;
+  font-size: 2rem ;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.label{
+  font-size: 2rem;
+}
+
+textarea{
+  width: 100%;
+  height: 60vh;
+}
+
+.input_button , .output_button{
+  padding:10px;
+  font-size: 25px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+
 }
